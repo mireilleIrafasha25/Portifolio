@@ -1,12 +1,21 @@
-import '../App';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faGithub, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
-
+import "../App";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faGithub,
+  faInstagram,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import Service from "./Service";
+import Skills from "./Skills";
+import Resume from "./Resume";
 
 const Homepage = () => {
   return (
-    <div className="bg-gray-900 text-white min-h-screen flex flex-col justify-center items-center">
-      <div className="flex flex-col gap-40 md:flex-row items-center ">
+  <div>
+    <div className="bg-gray-900 text-white min-h-screen pt-8 flex flex-col justify-center items-center">
+      <div className="flex flex-col px-32 gap-40 md:flex-row items-center ">
         <div className="text-center md:text-left md:w-1/2">
           <p className="text-lg md:text-xl text-gray-400 mb-2">
             Software Developer
@@ -24,62 +33,92 @@ const Homepage = () => {
             Download CV
           </button>
           <div className="flex space-x-8 mt-4 justify-center md:justify-start">
-            <a href="https://github.com/uwinezaflorence20" className="text-green-400 text-xl">
+            <a
+              href="https://github.com/uwinezaflorence20"
+              className="text-green-400 text-xl"
+            >
               <FontAwesomeIcon icon={faGithub} />
             </a>
-            <a href="https://www.linkedin.com/in/uwineza-florence-3b9463280/" className="text-green-400 text-xl">
+            <a
+              href="https://www.linkedin.com/in/uwineza-florence-3b9463280/"
+              className="text-green-400 text-xl"
+            >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
-            <a href="https://www.linkedin.com/in/uwineza-florence-3b9463280/" className="text-green-400 text-xl">
+            <a
+              href="https://www.linkedin.com/in/uwineza-florence-3b9463280/"
+              className="text-green-400 text-xl"
+            >
               <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a href="https://www.instagram.com/_uwineza_/" className="text-green-400 text-xl">
+            <a
+              href="https://www.instagram.com/_uwineza_/"
+              className="text-green-400 text-xl"
+            >
               <FontAwesomeIcon icon={faInstagram} />
             </a>
-            <a href="https://www.instagram.com/_uwineza_/" className="text-green-400 text-xl">
+            <a
+              href="https://www.instagram.com/_uwineza_/"
+              className="text-green-400 text-xl"
+            >
               <FontAwesomeIcon icon={faFacebook} />
             </a>
           </div>
         </div>
         <div className="relative mt-10 md:mt-0 md:ml-10">
-  <div className="relative w-60 h-60 md:w-80 md:h-80">
-    <img
-      src="/f.jpg"
-      alt="Florence Uwineza"
-      className="absolute inset-0 w-full h-full rounded-full border-4 border-green-400"
-      style={{ boxShadow: "0 0 0 4px rgba(79, 208, 154, 0.6), 0 0 0 4px rgba(79, 208, 154, 0.6)" }}
-    />
-  </div>
-</div>
-
+          <div className="relative w-60 h-60 md:w-80 md:h-80">
+            <img
+              src="/f.jpg"
+              alt="Florence Uwineza"
+              className="absolute inset-0 w-full h-full rounded-full border-4 border-green-400"
+              style={{
+                boxShadow:
+                  "0 0 0 4px rgba(79, 208, 154, 0.6), 0 0 0 4px rgba(79, 208, 154, 0.6)",
+              }}
+            />
+          </div>
+        </div>
       </div>
-      <div className="mt-12 flex space-x-12 gap-24">
-  <div className="text-center flex gap-2">
-    <div className="rounded-full bg-green-400 w-16 h-16 flex items-center justify-center mx-auto">
-      <h3 className="text-white text-2xl font-bold">1</h3>
+      <div className="mt-12 flex space-x-12 gap-20 px-32">
+        <div className="text-center flex gap-2">
+          <div className="rounded-full bg-green-400 w-16 h-16 flex items-center justify-center mx-auto">
+            <h3 className="text-white text-2xl font-bold">1</h3>
+          </div>
+          <p className="text-gray-400 text-sm mt-2">
+            Years of <br /> experience
+          </p>
+        </div>
+        <div className="text-center flex gap-2">
+          <div className="rounded-full bg-green-400 w-16 h-16 flex items-center justify-center mx-auto">
+            <h3 className="text-white text-2xl font-bold">5</h3>
+          </div>
+          <p className="text-gray-400 mt-2">
+            Projects <br /> completed
+          </p>
+        </div>
+        <div className="text-center flex gap-2">
+          <div className="rounded-full bg-green-400 w-16 h-16 flex items-center justify-center mx-auto">
+            <h3 className="text-white text-2xl font-bold">8</h3>
+          </div>
+          <p className="text-gray-400 mt-2">
+            Technologies <br /> mastered
+          </p>
+        </div>
+        <div className="text-center flex gap-2">
+          <div className="rounded-full bg-green-400 w-16 h-16 flex items-center justify-center mx-auto">
+            <h3 className="text-white text-3xl font-bold">500</h3>
+          </div>
+          <p className="text-gray-400 mt-2">
+            Code <br /> commits
+          </p>
+        </div>
+      </div>
+      
+     
     </div>
-    <p className="text-gray-400 text-sm mt-2">Years of <br /> experience</p>
-  </div>
-  <div className="text-center flex gap-2">
-    <div className="rounded-full bg-green-400 w-16 h-16 flex items-center justify-center mx-auto">
-      <h3 className="text-white text-2xl font-bold">5</h3>
-    </div>
-    <p className="text-gray-400 mt-2">Projects <br /> completed</p>
-  </div>
-  <div className="text-center flex gap-2">
-    <div className="rounded-full bg-green-400 w-16 h-16 flex items-center justify-center mx-auto">
-      <h3 className="text-white text-2xl font-bold">8</h3>
-    </div>
-    <p className="text-gray-400 mt-2">Technologies <br /> mastered</p>
-  </div>
-  <div className="text-center flex gap-2">
-    <div className="rounded-full bg-green-400 w-16 h-16 flex items-center justify-center mx-auto">
-      <h3 className="text-white text-3xl font-bold">500</h3>
-    </div>
-    <p className="text-gray-400 mt-2">Code <br /> commits</p>
-  </div>
-</div>
-
+     <Resume />
+      <Service />
+      <Skills/>
     </div>
   );
 };
