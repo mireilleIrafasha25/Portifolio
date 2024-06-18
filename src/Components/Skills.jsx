@@ -7,7 +7,7 @@ const skills = [
   { name: 'JavaScript', percentage: 65 },
   { name: 'CSS', percentage: 80 },
   { name: 'C++', percentage: 70 },
-  { name: 'Java', percentage: 86 },
+  { name: 'Tailwind css', percentage: 86 },
   { name: 'MySql', percentage: 60},
   { name: 'Java', percentage: 65 },
   { name: 'React', percentage: 70 },

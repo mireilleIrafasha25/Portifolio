@@ -17,13 +17,13 @@ const Navbar = () => {
           {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </div>
         <ul className={`flex space-x-1 md:space-x-1 md:flex ${isOpen ? 'flex' : 'hidden'} flex-col md:flex-row absolute md:static top-16 left-0 w-full md:w-auto bg-gray-900 md:bg-transparent z-10`}>
-        <Link to="/"><li><a  className="block py-2 px-4 text-green-400 underline ">Home</a></li></Link> 
+        <Link to="/"><li><a  className="block py-2 px-4 text-green-400  ">Home</a></li></Link> 
         {/* <Link to="/aboutme"><li><a  className="block py-2 px-4 hover:underline hover:text-green-400">About</a></li></Link> */}
-        <Link to="/resume"><li><a  className="block py-2 px-4  hover:underline hover:text-green-400">Resume</a></li></Link>
-        <Link to="/service"><li><a  className="block py-2 px-4 hover:underline hover:text-green-400">Services</a></li></Link>
-        <Link to="/skill"><li><a  className="block py-2 px-4 hover:underline hover:text-green-400">Skill</a></li></Link>
-        <Link to="/project"><li><a  className="block py-2 px-4 hover:underline hover:text-green-400">Project</a></li></Link>
-        <Link to="/contact"><li><a  className="block py-2 px-4 hover:underline hover:text-green-400">Contact</a></li></Link>
+        <Link to="/resume"><li><a  className="block py-2 px-4   hover:text-green-400">Resume</a></li></Link>
+        <Link to="/service"><li><a  className="block py-2 px-4  hover:text-green-400">Services</a></li></Link>
+        <Link to="/skill"><li><a  className="block py-2 px-4  hover:text-green-400">Skill</a></li></Link>
+        <Link to="/project"><li><a  className="block py-2 px-4  hover:text-green-400">Project</a></li></Link>
+        <Link to="/contact"><li><a  className="block py-2 px-4  hover:text-green-400">Contact</a></li></Link>
         
         </ul>
        <Link to="https://github.com/uwinezaflorence20"> <button className="hidden md:block bg-green-500 text-black py-2 px-4 rounded-full hover:bg-green-600">Hire me</button>

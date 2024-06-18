@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 const Resume = () => {
   const timelineData = [
@@ -31,6 +31,12 @@ const Resume = () => {
         title: 'Business Administration',
         company: 'UoP',
         description: 'Bachelor degree in Bussiness Administation at university of people',
+      },
+      {
+        year: '2024-Present',
+        title: 'ALX AiCE - AI Career Essentials',
+        company: 'ALX Rwanda',
+        description: 'AI essential skills',
       },
   ];
 

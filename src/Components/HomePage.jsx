@@ -10,6 +10,8 @@ import {
 import Service from "./Service";
 import Skills from "./Skills";
 import Resume from "./Resume";
+import Project from "./Project";
+import Contact from "./Contact";
 
 const Homepage = () => {
   return (
@@ -119,6 +121,8 @@ const Homepage = () => {
      <Resume />
       <Service />
       <Skills/>
+      <Project/>
+      <Contact/>
     </div>
   );
 };
