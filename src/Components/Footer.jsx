@@ -10,7 +10,7 @@ import {
 import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
-    <footer className="bg-gray-900  text-white py-6">
+    <footer className="bg-gray-900 text-white py-6">
       <div className="container mx-auto px-6 flex flex-col items-center">
         <div className="flex space-x-4 mb-4">
         <a
@@ -58,7 +58,7 @@ const Footer = () => {
         </ul></div>
         <div className="border-t border-gray-800 w-full mt-4"></div>
         <div className="mt-4 text-center">
-          <p>© Florence. All Rights Reserved</p>
+          <p>© Florence uwineza. All Rights Reserved</p>
         </div>
       </div>
     </footer>

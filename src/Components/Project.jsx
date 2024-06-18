@@ -79,7 +79,7 @@ const Project = () => {
             <div className="flex justify-between mt-4">
               <a
                 href={project.githubLink}
-                className="text-green-400"
+                className="text-green-400 hover:text-green-900"
                 target="_blank"
                 rel="noopener noreferrer"
               >
