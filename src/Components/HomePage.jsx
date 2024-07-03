@@ -31,9 +31,12 @@ const Homepage = () => {
             <br />
             am proficient in various programming languages and technologies.
           </p>
-          <button className="mt-6 bg-green-500 text-black py-2 px-6 rounded-full hover:bg-green-600">
-            Download CV
-          </button>
+          <a href="cv of mine.pdf" download>
+  <button className="mt-6 bg-green-500 text-black py-2 px-6 rounded-full hover:bg-green-600">
+    Download CV
+  </button>
+</a>
+
           <div className="flex space-x-8 mt-4 justify-center md:justify-start">
             <a
               href="https://github.com/uwinezaflorence20"
