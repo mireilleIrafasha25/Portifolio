@@ -1,5 +1,4 @@
-
-
+import { motion } from "framer-motion";
 const Resume = () => {
   const timelineData = [
     {
@@ -42,11 +41,20 @@ const Resume = () => {
 
   return (
     <section className="bg-gray-900 px-28 text-white py-16"> 
-    <div className="text-center mb-10 text-4xl font-extrabold">
-            <p>Experience and Education</p>
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, delay: 0.5 }}
+      >
+        <div className="text-center mb-10 text-4xl font-extrabold">
+          <p>Experience and Education</p>
         </div>
-      <div className="container mx-auto px-4">
-       
+      </motion.div>
+      <motion.div
+      initial={{ opacity: 0, x: 100 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1, delay: 0.5 }}
+      className="container mx-auto px-4">
         <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8">
           {timelineData.map((item, index) => (
             <div key={index} className="flex items-start space-x-4 relative">
@@ -57,7 +65,6 @@ const Resume = () => {
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-2-8h4a1 1 0 100-2H8a1 1 0 000 2zm0 4h4a1 1 0 100-2H8a1 1 0 000 2zm0-8h4a1 1 0 100-2H8a1 1 0 000 2z" clipRule="evenodd" />
                   </svg>
                 </div>
-               
                 <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-px h-full bg-gray-400"></div>
               </div>
               <div>
@@ -70,7 +77,7 @@ const Resume = () => {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

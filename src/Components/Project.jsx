@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import { motion } from 'framer-motion';
 const projects = [
   
   {
@@ -64,12 +64,19 @@ const Project = () => {
 
   return (
     <div className="relative bg-gray-900 w-full p-28  pb-8 mx-auto">
-        <div className=" text-4xl text-white pb-12 font-extrabold text-center">
+        <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, delay: 0.5 }} className=" text-4xl text-white pb-12 font-extrabold text-center">
             <p > My Projects</p>
-        </div>
+        </motion.div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {visibleProjects.map((project, index) => (
-          <div key={index} className="bg-gray-800 rounded-lg p-6">
+          <motion.div
+          initial={{ opacity: 0, x: -100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, delay: 0.5 }}
+          key={index} className="bg-gray-800 rounded-lg p-6">
             <img
               src={project.imageSrc}
               alt={`${project.title} screenshot`}
@@ -87,10 +94,14 @@ const Project = () => {
               </a>
               
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
-      <div className="absolute bottom-0 flex justify-center w-full p-4">
+      <motion.div
+      initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1, delay: 0.5 }}
+       className="absolute bottom-0 flex justify-center w-full p-4">
         {Array.from({ length: Math.ceil(projects.length / 3) }).map((_, index) => (
           <button
             key={index}
@@ -98,7 +109,7 @@ const Project = () => {
             onClick={() => setCurrentIndex(index * 3)}
           ></button>
         ))}
-      </div>
+      </motion.div>
       
       
     </div>
