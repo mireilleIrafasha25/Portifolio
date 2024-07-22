@@ -9,7 +9,7 @@ const Resume = () => {
     },
     {
       year: '2021 - PRESENT',
-      title: 'Bachelor degree',
+      title: 'Bachelor degrees',
       company: 'UR',
       description: 'Bachelor degree in computer science',
     },
