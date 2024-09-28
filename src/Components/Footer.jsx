@@ -14,19 +14,19 @@ const Footer = () => {
       <div className="container mx-auto px-6 flex flex-col items-center">
         <div className="flex space-x-4 mb-4">
         <a
-              href="https://github.com/uwinezaflorence20"
+              href="https://github.com/mireilleIrafasha25"
               className="text-green-400 text-xl"
             >
               <FontAwesomeIcon icon={faGithub} />
             </a>
             <a
-              href="https://www.linkedin.com/in/uwineza-florence-3b9463280/"
+              href="www.linkedin.com/in/irafasha-marie-mireille-26510b2aa"
               className="text-green-400 text-xl"
             >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
             <a
-              href="https://www.linkedin.com/in/uwineza-florence-3b9463280/"
+              href="www.linkedin.com/in/irafasha-marie-mireille-26510b2aa"
               className="text-green-400 text-xl"
             >
               <FontAwesomeIcon icon={faTwitter} />

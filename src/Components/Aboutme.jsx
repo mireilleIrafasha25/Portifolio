@@ -23,14 +23,14 @@ const Aboutme = () => {
           <div>
             <h3 className="text-3xl font-bold mb-6">PERSONAL INFOS</h3>
             <ul>
-              <li className="mb-2"><strong>First Name:</strong> Florence</li>
-              <li className="mb-2"><strong>Last Name:</strong> Uwineza</li>
-              <li className="mb-2"><strong>Age:</strong> 22 Years</li>
+              <li className="mb-2"><strong>First Name:</strong> Marie Mireille</li>
+              <li className="mb-2"><strong>Last Name:</strong> Irafasha</li>
+              <li className="mb-2"><strong>Age:</strong> 21 Years</li>
               <li className="mb-2"><strong>Nationality:</strong> Rwandan</li>
               <li className="mb-2"><strong>Freelance:</strong> <span className="text-green-500">Available</span></li>
               <li className="mb-2"><strong>Address:</strong>  Rwanda</li>
-              <li className="mb-2"><strong>Phone:</strong> <a href="tel:+250791348662" className="text-blue-400">+250791348662</a></li>
-              <li className="mb-2"><strong>Email:</strong> <a href="mailto:uwinezaflorence20@gmail.com" className="text-blue-400">uwinezaflorence20@gmail.com</a></li>
+              <li className="mb-2"><strong>Phone:</strong> <a href="tel:+250783010765" className="text-blue-400">+250783010765</a></li>
+              <li className="mb-2"><strong>Email:</strong> <a href="mailto:irafashamariemireille@gmail.com" className="text-blue-400">irafashamariemireille@gmail.com</a></li>
               <li className="mb-2"><strong>Languages:</strong> Kinyarwanda, English</li>
             </ul>
             <button className="mt-6 bg-yellow-500 text-black py-2 px-4 rounded-full font-bold hover:bg-yellow-600 transition duration-300">
